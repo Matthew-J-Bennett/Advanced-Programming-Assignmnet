@@ -28,6 +28,9 @@
     <ClCompile Include="Square.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\Advanced Programming Assignmnet.sln" />
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="Circle.h" />
     <ClInclude Include="Movable.h" />
     <ClInclude Include="Point.h" />
@@ -35,15 +38,13 @@
     <ClInclude Include="Shape.h" />
     <ClInclude Include="Square.h" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="..\Advanced Programming Assignmnet.sln" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{CCEAB12F-BFD6-49EE-A20D-98EB9F4CA5A4}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>AdvancedProgrammingAssignmnet</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Advanced Programming Assignment</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -1,11 +1,8 @@
 #pragma once
-#include <iostream>
-#include <string>
 class Movable
 {
 public:
-	void move();
-	void scale(int x,int y);
-
+	virtual void move(int newX, int newY);
+	virtual void scale(float newX, float newY);
 };
 

@@ -1,11 +1,12 @@
 #include "Movable.h"
-#include <iostream>
-#include <string>
+#include "Shape.h"
 
-void Movable::move()
+void Movable::move(int newX, int newY)
 {
+	
+	
 }
 
-void Movable::scale(int x,int y)
+void Movable::scale(float newX, float newY)
 {
 }

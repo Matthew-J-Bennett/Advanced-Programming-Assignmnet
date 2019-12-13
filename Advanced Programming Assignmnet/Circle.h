@@ -1,14 +1,17 @@
 #pragma once
 #include "Shape.h"
 #include "Movable.h"
-
-#define _USE_MATH_DEFINES
-#include <math.h>
-
-class Circle : public Shape
+class Circle: public Shape, public Movable
 {
 public:
-	int radius;
-
+	Circle(int x, int y, int r);
+	float radius;
+	void calculatePoints();
+	void calculateArea();
+	void calculatePerimeter();
+	double pi = 3.14159265359;
+	string toString();
+	void move(int newX, int newY);
+	void scale(float scaleX, float scaleY);
 };
 

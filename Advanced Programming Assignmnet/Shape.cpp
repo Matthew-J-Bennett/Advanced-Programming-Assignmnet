@@ -1,16 +1,20 @@
-
-#include <iostream>
-#include <string>
 #include "Shape.h"
-using namespace std;
 
-
-double Shape::calculateArea()
+Shape::Shape()
 {
-	return 0.0;
 }
 
-void Shape::calculatePoints()
+Shape::Shape(int x, int y)
+{
+	leftTop = Point(x, y);
+}
+
+string Shape::toString()
+{
+	return "";
+}
+
+void Shape::calculateArea()
 {
 }
 
@@ -18,11 +22,7 @@ void Shape::calculatePerimeter()
 {
 }
 
-void Shape::toString()
-{
-	//return " ";
-}
-
-Shape::Shape()
-{
+ostream& operator <<(ostream& output, Shape* r) {
+	output << r->toString();
+	return output;
 }
